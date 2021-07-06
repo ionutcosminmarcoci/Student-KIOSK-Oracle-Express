@@ -1,0 +1,357 @@
+prompt --application/pages/page_00002
+begin
+--   Manifest
+--     PAGE: 00002
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2020.03.31'
+,p_release=>'20.1.0.00.13'
+,p_default_workspace_id=>1751729405033277709
+,p_default_application_id=>1722311
+,p_default_id_offset=>31667017495976992169
+,p_default_owner=>'SK1722311'
+);
+wwv_flow_api.create_page(
+ p_id=>2
+,p_user_interface_id=>wwv_flow_api.id(47016291282669478695)
+,p_name=>'Browse Events'
+,p_alias=>'BROWSE-EVENTS'
+,p_step_title=>'Browse Events'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_protection_level=>'C'
+,p_last_updated_by=>'1722311'
+,p_last_upd_yyyymmddhh24miss=>'20200520193006'
+);
+wwv_flow_api.create_report_region(
+ p_id=>wwv_flow_api.id(16420273735553125350)
+,p_name=>'Book Events'
+,p_template=>wwv_flow_api.id(47016106683667478618)
+,p_display_sequence=>20
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_component_template_options=>'#DEFAULT#:t-Report--altRowsDefault:t-Report--rowHighlight'
+,p_display_point=>'BODY'
+,p_source_type=>'NATIVE_SQL_REPORT'
+,p_query_type=>'TABLE'
+,p_query_table=>'EVENT'
+,p_include_rowid_column=>false
+,p_required_role=>'!'||wwv_flow_api.id(47016295457148478704)
+,p_ajax_enabled=>'Y'
+,p_query_row_template=>wwv_flow_api.id(47016235588422478646)
+,p_query_num_rows=>15
+,p_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_query_num_rows_type=>'NEXT_PREVIOUS_LINKS'
+,p_pagination_display_position=>'BOTTOM_RIGHT'
+,p_csv_output=>'N'
+,p_prn_output=>'N'
+,p_sort_null=>'L'
+,p_plug_query_strip_html=>'N'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178490658935101)
+,p_query_column_id=>1
+,p_column_alias=>'EVENT_ID'
+,p_column_display_sequence=>1
+,p_hidden_column=>'Y'
+,p_derived_column=>'N'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178564483935102)
+,p_query_column_id=>2
+,p_column_alias=>'EVENT_NAME'
+,p_column_display_sequence=>2
+,p_column_heading=>'Event Name'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178671876935103)
+,p_query_column_id=>3
+,p_column_alias=>'EVENT_DATE'
+,p_column_display_sequence=>3
+,p_column_heading=>'Event Date'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178706729935104)
+,p_query_column_id=>4
+,p_column_alias=>'EVENT_TIME'
+,p_column_display_sequence=>4
+,p_column_heading=>'Event Time'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178861398935105)
+,p_query_column_id=>5
+,p_column_alias=>'ORGANIZED_BY'
+,p_column_display_sequence=>5
+,p_column_heading=>'Organized By'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455178952934935106)
+,p_query_column_id=>6
+,p_column_alias=>'ORGANIZER_EMAIL'
+,p_column_display_sequence=>6
+,p_column_heading=>'Organizer Email'
+,p_use_as_row_header=>'N'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455179047847935107)
+,p_query_column_id=>7
+,p_column_alias=>'BOOKABLE'
+,p_column_display_sequence=>7
+,p_hidden_column=>'Y'
+,p_derived_column=>'N'
+);
+wwv_flow_api.create_report_columns(
+ p_id=>wwv_flow_api.id(16455179134681935108)
+,p_query_column_id=>8
+,p_column_alias=>'REMOVE'
+,p_column_display_sequence=>8
+,p_use_as_row_header=>'N'
+,p_column_link=>'javascript:void(null);'
+,p_column_linktext=>'<button type="button" class="t-Button t-Button--hot insert-note">BOOK</button>'
+,p_column_link_attr=>'data-id=#EVENT_ID#'
+,p_disable_sort_column=>'N'
+,p_derived_column=>'N'
+,p_include_in_export=>'Y'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(16454264932455399272)
+,p_plug_name=>'Edit Events'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(47016104707045478617)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'BODY'
+,p_query_type=>'TABLE'
+,p_query_table=>'EVENT'
+,p_include_rowid_column=>false
+,p_plug_source_type=>'NATIVE_IR'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_plug_required_role=>wwv_flow_api.id(47016295457148478704)
+,p_prn_content_disposition=>'ATTACHMENT'
+,p_prn_document_header=>'APEX'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header=>'ADMIN'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+);
+wwv_flow_api.create_worksheet(
+ p_id=>wwv_flow_api.id(16454265388090399272)
+,p_name=>'Report 1'
+,p_max_row_count_message=>'The maximum row count for this report is #MAX_ROW_COUNT# rows.  Please apply a filter to reduce the number of records in your query.'
+,p_no_data_found_message=>'No data found.'
+,p_pagination_type=>'ROWS_X_TO_Y'
+,p_pagination_display_pos=>'BOTTOM_RIGHT'
+,p_show_actions_menu=>'N'
+,p_report_list_mode=>'TABS'
+,p_show_detail_link=>'C'
+,p_detail_link=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.:RP:P5_EVENT_ID:\#EVENT_ID#\'
+,p_detail_link_text=>'<span aria-label="Edit"><span class="fa fa-edit" aria-hidden="true" title="Edit"></span></span>'
+,p_owner=>'1722311'
+,p_internal_uid=>16454265388090399272
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454265493901399272)
+,p_db_column_name=>'EVENT_ID'
+,p_display_order=>1
+,p_column_identifier=>'A'
+,p_column_label=>'Event Id'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454265823014399273)
+,p_db_column_name=>'EVENT_NAME'
+,p_display_order=>2
+,p_column_identifier=>'B'
+,p_column_label=>'Event Name'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454266260600399273)
+,p_db_column_name=>'EVENT_DATE'
+,p_display_order=>3
+,p_column_identifier=>'C'
+,p_column_label=>'Event Date'
+,p_column_type=>'DATE'
+,p_column_alignment=>'CENTER'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454266644270399274)
+,p_db_column_name=>'EVENT_TIME'
+,p_display_order=>4
+,p_column_identifier=>'D'
+,p_column_label=>'Event Time'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454267078140399274)
+,p_db_column_name=>'ORGANIZED_BY'
+,p_display_order=>5
+,p_column_identifier=>'E'
+,p_column_label=>'Organized By'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454267408254399274)
+,p_db_column_name=>'ORGANIZER_EMAIL'
+,p_display_order=>6
+,p_column_identifier=>'F'
+,p_column_label=>'Organizer Email'
+,p_column_type=>'STRING'
+,p_heading_alignment=>'LEFT'
+,p_tz_dependent=>'N'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454267872075399274)
+,p_db_column_name=>'BOOKABLE'
+,p_display_order=>7
+,p_column_identifier=>'G'
+,p_column_label=>'Bookable'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
+);
+wwv_flow_api.create_worksheet_column(
+ p_id=>wwv_flow_api.id(16454268225585399275)
+,p_db_column_name=>'REMOVE'
+,p_display_order=>8
+,p_column_identifier=>'H'
+,p_column_label=>'Remove'
+,p_column_type=>'STRING'
+,p_display_text_as=>'HIDDEN'
+);
+wwv_flow_api.create_worksheet_rpt(
+ p_id=>wwv_flow_api.id(16456293282286436814)
+,p_application_user=>'APXWS_DEFAULT'
+,p_report_seq=>10
+,p_report_alias=>'164562933'
+,p_status=>'PUBLIC'
+,p_is_default=>'Y'
+,p_report_columns=>'EVENT_ID:EVENT_NAME:EVENT_DATE:EVENT_TIME:ORGANIZED_BY:ORGANIZER_EMAIL:BOOKABLE:REMOVE'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(16454273075470408099)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_api.id(16454264932455399272)
+,p_button_name=>'CREATE'
+,p_button_action=>'REDIRECT_PAGE'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Create'
+,p_button_position=>'RIGHT_OF_IR_SEARCH_BAR'
+,p_button_redirect_url=>'f?p=&APP_ID.:5:&SESSION.::&DEBUG.:5'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(16455179258336935109)
+,p_name=>'P2_INSERT_ACTION'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(16420273735553125350)
+,p_display_as=>'NATIVE_HIDDEN'
+,p_attribute_01=>'Y'
+);
+wwv_flow_api.create_page_da_event(
+ p_id=>wwv_flow_api.id(16455179363543935110)
+,p_name=>'CLICK_INSERT'
+,p_event_sequence=>10
+,p_triggering_element_type=>'JQUERY_SELECTOR'
+,p_triggering_element=>'.insert-note'
+,p_bind_type=>'live'
+,p_bind_event_type=>'click'
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(16455180866063935125)
+,p_event_id=>wwv_flow_api.id(16455179363543935110)
+,p_event_result=>'TRUE'
+,p_action_sequence=>10
+,p_execute_on_page_init=>'Y'
+,p_action=>'NATIVE_DISABLE'
+,p_affected_elements_type=>'EVENT_SOURCE'
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(16455179449222935111)
+,p_event_id=>wwv_flow_api.id(16455179363543935110)
+,p_event_result=>'TRUE'
+,p_action_sequence=>20
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_CONFIRM'
+,p_attribute_01=>wwv_flow_string.join(wwv_flow_t_varchar2(
+'Are you sure ?',
+''))
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(16455179552607935112)
+,p_event_id=>wwv_flow_api.id(16455179363543935110)
+,p_event_result=>'TRUE'
+,p_action_sequence=>30
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_SET_VALUE'
+,p_affected_elements_type=>'ITEM'
+,p_affected_elements=>'P2_INSERT_ACTION'
+,p_attribute_01=>'JAVASCRIPT_EXPRESSION'
+,p_attribute_05=>'$(this.triggeringElement).parent().data(''id'')'
+,p_attribute_09=>'N'
+,p_wait_for_result=>'Y'
+);
+wwv_flow_api.create_page_da_action(
+ p_id=>wwv_flow_api.id(16455179621355935113)
+,p_event_id=>wwv_flow_api.id(16455179363543935110)
+,p_event_result=>'TRUE'
+,p_action_sequence=>40
+,p_execute_on_page_init=>'N'
+,p_action=>'NATIVE_EXECUTE_PLSQL_CODE'
+,p_attribute_01=>'BEGIN INSERT INTO BOOKINGS SELECT  EVENT_ID , EVENT_NAME , EVENT_DATE , EVENT_TIME , ORGANIZED_BY , ORGANIZER_EMAIL , :APP_USER , REMOVE FROM EVENT WHERE EVENT_ID =:P2_INSERT_ACTION; END;'
+,p_attribute_02=>'P2_INSERT_ACTION'
+,p_wait_for_result=>'Y'
+);
+wwv_flow_api.component_end;
+end;
+/

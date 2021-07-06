@@ -1,0 +1,369 @@
+prompt --application/pages/page_00003
+begin
+--   Manifest
+--     PAGE: 00003
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2020.03.31'
+,p_release=>'20.1.0.00.13'
+,p_default_workspace_id=>1751729405033277709
+,p_default_application_id=>1722311
+,p_default_id_offset=>31667017495976992169
+,p_default_owner=>'SK1722311'
+);
+wwv_flow_api.create_page(
+ p_id=>3
+,p_user_interface_id=>wwv_flow_api.id(47016291282669478695)
+,p_name=>'Local Services'
+,p_alias=>'LOCAL-SERVICES'
+,p_step_title=>'Local Services'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_last_updated_by=>'1722311'
+,p_last_upd_yyyymmddhh24miss=>'20200520010641'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(16455181628539935133)
+,p_plug_name=>'Local Services'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_display_point=>'REGION_POSITION_08'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643021093412778)
+,p_plug_name=>'Luton Mall'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>3
+,p_plug_display_column=>1
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643148118412779)
+,p_plug_name=>'Luton Library'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>20
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>3
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643254476412780)
+,p_plug_name=>'UoB Campus Centre/Library'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>30
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>3
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643354545412781)
+,p_plug_name=>'CineWorld'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>40
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>3
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643438815412782)
+,p_plug_name=>'L&D Hospital '
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>50
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_grid_column_span=>3
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313643593275412783)
+,p_plug_name=>'Luton Stadium'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>60
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_grid_column_span=>3
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313644636707412794)
+,p_plug_name=>'The WhiteHouse Pub'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>70
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313644715558412795)
+,p_plug_name=>'WardownPark'
+,p_region_template_options=>'#DEFAULT#:t-Region--scrollBody'
+,p_plug_template=>wwv_flow_api.id(47016106683667478618)
+,p_plug_display_sequence=>80
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_new_grid_row=>false
+,p_plug_display_point=>'BODY'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645394749412801)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313643254476412780)
+,p_button_name=>'button3'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://lrweb.beds.ac.uk/opening/ph/'
+,p_grid_new_row=>'N'
+,p_grid_new_column=>'N'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645431698412802)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313643354545412781)
+,p_button_name=>'button4'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://www.cineworld.co.uk/#/'
+,p_grid_new_row=>'N'
+,p_grid_new_column=>'N'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645505328412803)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313643438815412782)
+,p_button_name=>'button5'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://www.bedfordshirehospitals.nhs.uk/'
+,p_grid_new_row=>'Y'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645596093412804)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313643593275412783)
+,p_button_name=>'button6'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://www.lutontown.co.uk/'
+,p_grid_new_row=>'N'
+,p_grid_new_column=>'N'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645719406412805)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313644636707412794)
+,p_button_name=>'button7'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://www.jdwetherspoon.com/pubs/all-pubs/england/bedfordshire/the-white-house-luton?utm_source=google&utm_medium=maps&utm_campaign=gmb'
+,p_grid_new_row=>'N'
+,p_grid_new_column=>'N'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645798280412806)
+,p_button_sequence=>20
+,p_button_plug_id=>wwv_flow_api.id(47313644715558412795)
+,p_button_name=>'button8'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://m.luton.gov.uk/Page/Show/Leisure_and_culture/Parks_and_recreation/Parks%20and%20Open%20Spaces/Pages/Wardown%20Park.aspx'
+,p_grid_new_row=>'Y'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645199736412800)
+,p_button_sequence=>30
+,p_button_plug_id=>wwv_flow_api.id(47313643148118412779)
+,p_button_name=>'button2'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://activeluton.co.uk/luton-libraries'
+,p_grid_new_row=>'Y'
+);
+wwv_flow_api.create_page_button(
+ p_id=>wwv_flow_api.id(47313645135488412799)
+,p_button_sequence=>200
+,p_button_plug_id=>wwv_flow_api.id(47313643021093412778)
+,p_button_name=>'button1'
+,p_button_action=>'REDIRECT_URL'
+,p_button_template_options=>'#DEFAULT#'
+,p_button_template_id=>wwv_flow_api.id(47016268736904478677)
+,p_button_is_hot=>'Y'
+,p_button_image_alt=>'Visit Website'
+,p_button_position=>'BODY'
+,p_button_redirect_url=>'https://www.themall.co.uk/luton/'
+,p_grid_new_row=>'Y'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313643674949412784)
+,p_name=>'P3_NEW'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313643021093412778)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#Luton Mall.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644103210412789)
+,p_name=>'P3_NEW_1'
+,p_item_sequence=>20
+,p_item_plug_id=>wwv_flow_api.id(47313643148118412779)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#Luton library.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644271729412790)
+,p_name=>'P3_NEW_2'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313643254476412780)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#campus-centre.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644364723412791)
+,p_name=>'P3_NEW_3'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313643354545412781)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#cineworld.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644448195412792)
+,p_name=>'P3_NEW_4'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313643438815412782)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#luton hospital.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644522286412793)
+,p_name=>'P3_NEW_5'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313643593275412783)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#luton stadium.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644891795412796)
+,p_name=>'P3_NEW_6'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313644636707412794)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#the-white-house.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(47313644973787412797)
+,p_name=>'P3_NEW_7'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313644715558412795)
+,p_prompt=>'New'
+,p_source=>'#APP_IMAGES#wardown park.jpg'
+,p_source_type=>'STATIC'
+,p_display_as=>'NATIVE_DISPLAY_IMAGE'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'URL'
+);
+wwv_flow_api.component_end;
+end;
+/

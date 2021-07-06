@@ -1,0 +1,108 @@
+prompt --application/pages/page_00001
+begin
+--   Manifest
+--     PAGE: 00001
+--   Manifest End
+wwv_flow_api.component_begin (
+ p_version_yyyy_mm_dd=>'2020.03.31'
+,p_release=>'20.1.0.00.13'
+,p_default_workspace_id=>1751729405033277709
+,p_default_application_id=>1722311
+,p_default_id_offset=>31667017495976992169
+,p_default_owner=>'SK1722311'
+);
+wwv_flow_api.create_page(
+ p_id=>1
+,p_user_interface_id=>wwv_flow_api.id(47016291282669478695)
+,p_name=>'Home'
+,p_alias=>'HOME'
+,p_step_title=>'SIK'
+,p_autocomplete_on_off=>'OFF'
+,p_page_template_options=>'#DEFAULT#'
+,p_page_is_public_y_n=>'Y'
+,p_last_updated_by=>'1722311'
+,p_last_upd_yyyymmddhh24miss=>'20200518011047'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(31678243418648927903)
+,p_plug_name=>'Navigation Menu'
+,p_region_template_options=>'#DEFAULT#'
+,p_component_template_options=>'#DEFAULT#:t-Cards--featured force-fa-lg:t-Cards--displayIcons:t-Cards--3cols:t-Cards--animRaiseCard'
+,p_plug_template=>wwv_flow_api.id(47016079230576478597)
+,p_plug_display_sequence=>30
+,p_plug_display_point=>'BODY'
+,p_list_id=>wwv_flow_api.id(47016414377663479078)
+,p_plug_source_type=>'NATIVE_LIST'
+,p_list_template_id=>wwv_flow_api.id(47016246329199478654)
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47016306216664478724)
+,p_plug_name=>'Student Information Kiosk 1.0'
+,p_icon_css_classes=>'fa-street-view'
+,p_region_template_options=>'#DEFAULT#:t-HeroRegion--noPadding:t-HeroRegion--featured t-HeroRegion--centered:t-HeroRegion--iconsCircle:margin-top-md:margin-left-md:margin-right-md'
+,p_plug_template=>wwv_flow_api.id(47016097015055478611)
+,p_plug_display_sequence=>10
+,p_plug_display_point=>'REGION_POSITION_01'
+,p_plug_query_num_rows=>15
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+,p_attribute_03=>'Y'
+);
+wwv_flow_api.create_page_plug(
+ p_id=>wwv_flow_api.id(47313642893488412776)
+,p_plug_name=>'Tweets'
+,p_region_template_options=>'#DEFAULT#'
+,p_plug_template=>wwv_flow_api.id(47016104707045478617)
+,p_plug_display_sequence=>10
+,p_include_in_reg_disp_sel_yn=>'Y'
+,p_plug_display_point=>'REGION_POSITION_05'
+,p_plug_query_options=>'DERIVED_REPORT_COLUMNS'
+,p_prn_units=>'INCHES'
+,p_prn_paper_size=>'LETTER'
+,p_prn_width=>11
+,p_prn_height=>8.5
+,p_prn_orientation=>'HORIZONTAL'
+,p_prn_page_header=>'Tweets'
+,p_prn_page_header_font_color=>'#000000'
+,p_prn_page_header_font_family=>'Helvetica'
+,p_prn_page_header_font_weight=>'normal'
+,p_prn_page_header_font_size=>'12'
+,p_prn_page_footer_font_color=>'#000000'
+,p_prn_page_footer_font_family=>'Helvetica'
+,p_prn_page_footer_font_weight=>'normal'
+,p_prn_page_footer_font_size=>'12'
+,p_prn_header_bg_color=>'#EEEEEE'
+,p_prn_header_font_color=>'#000000'
+,p_prn_header_font_family=>'Helvetica'
+,p_prn_header_font_weight=>'bold'
+,p_prn_header_font_size=>'10'
+,p_prn_body_bg_color=>'#FFFFFF'
+,p_prn_body_font_color=>'#000000'
+,p_prn_body_font_family=>'Helvetica'
+,p_prn_body_font_weight=>'normal'
+,p_prn_body_font_size=>'10'
+,p_prn_border_width=>.5
+,p_prn_page_header_alignment=>'CENTER'
+,p_prn_page_footer_alignment=>'CENTER'
+,p_prn_border_color=>'#666666'
+,p_attribute_01=>'N'
+,p_attribute_02=>'HTML'
+);
+wwv_flow_api.create_page_item(
+ p_id=>wwv_flow_api.id(16369428941709589629)
+,p_name=>'YOUTUBE'
+,p_item_sequence=>10
+,p_item_plug_id=>wwv_flow_api.id(47313642893488412776)
+,p_prompt=>'Video'
+,p_source=>'FudLi2k5ImE'
+,p_source_type=>'STATIC'
+,p_display_as=>'PLUGIN_COM.JK64.YOUTUBE_PLAYER'
+,p_field_template=>wwv_flow_api.id(47016267616106478675)
+,p_item_template_options=>'#DEFAULT#'
+,p_attribute_01=>'fs:controls'
+);
+wwv_flow_api.component_end;
+end;
+/
